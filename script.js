@@ -20,7 +20,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('/:country/:city', (req, res) => {
-    res.send(`${req.params.country} ${req.params.city} page`);
+    res.send(`${req.params.city}, ${req.params.country} page`);
 });
 
 
